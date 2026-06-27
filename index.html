@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feedback assistance à distance des guichets Self-service</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card">
+      <header class="visual-header" aria-label="Assistance à distance bpost">
+        <img src="assets/bpost-header.png" alt="bpost" class="bpost-header" />
+        <div class="assist-visual">
+          <img src="assets/assistance-distance.png" alt="J’ai besoin d’assistance - Nous vous accompagnons à chaque étape" />
+        </div>
+      </header>
+
+      <section class="title-block">
+        <p class="eyebrow">ONE TEAM · Nous agissons ensemble</p>
+        <h1>Feedback assistance à distance des guichets Self-service</h1>
+        <p class="intro">Votre retour nous aide à améliorer l’outil, les connexions et l’expérience au guichet self.</p>
+      </section>
+
+      <form id="feedbackForm">
+        <label for="bureau">Vous êtes situés dans quel bureau ?</label>
+        <select id="bureau" name="bureau" required>
+          <option value="" selected disabled>Sélectionnez votre bureau</option>
+          <option>Ans</option>
+          <option>Flémalle-Haute</option>
+          <option>Fléron</option>
+          <option>Herstal</option>
+          <option>Liège Avroy</option>
+          <option>Liège Grétry</option>
+          <option>Liège Perron</option>
+          <option>Seraing</option>
+          <option>Visé</option>
+        </select>
+
+        <label for="typeRetour">Type de retour</label>
+        <select id="typeRetour" name="typeRetour" required>
+          <option value="" selected disabled>Sélectionnez le type de retour</option>
+          <option>Problème de connexion</option>
+          <option>Difficulté rencontrée</option>
+          <option>Idée d’amélioration</option>
+          <option>Bonne pratique</option>
+          <option>Autre</option>
+        </select>
+
+        <label for="commentaire">Votre commentaire</label>
+        <textarea id="commentaire" name="commentaire" rows="6" placeholder="Décrivez brièvement votre retour…" required></textarea>
+
+        <button type="submit" id="submitButton">Envoyer</button>
+      </form>
+
+      <div id="message" class="message" hidden></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
